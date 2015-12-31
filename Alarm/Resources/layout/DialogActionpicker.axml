@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:weightSum="100">
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:divider="#ffe53935"
+        android:dividerHeight="1dp"
+        android:layout_height="0dp"
+        android:layout_weight="90"
+        android:id="@+id/actionpicker_listview" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:weightSum="100"
+        android:gravity="bottom"
+        android:layout_marginBottom="10dp">
+        <Button
+            android:text="@string/cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:id="@+id/actionpicker_button_cancel" />
+        <Button
+            android:text="@string/save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50"
+            android:id="@+id/actionpicker_button_save" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+    <TextView
+        android:text="0.0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="70"
+        android:id="@+id/alarmgoingoff_time"
+        android:textSize="50sp"
+        android:textColor="#ffe53935" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:weightSum="100"
+        android:layout_weight="30"
+        android:orientation="horizontal"
+        android:paddingBottom="20dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+        <Button
+            android:text="@string/turnOff"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:id="@+id/alarmgoingoff_off"
+            android:layout_marginRight="5dp" />
+        <Button
+            android:text="@string/snooze"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="50"
+            android:id="@+id/alarmgoingoff_snooze"
+            android:layout_marginLeft="5dp" />
+    </LinearLayout>
+</LinearLayout>

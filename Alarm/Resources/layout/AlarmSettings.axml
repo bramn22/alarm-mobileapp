@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/trash"
+        android:scaleX="0.3"
+        android:scaleY="0.4"
+        android:id="@+id/alarm_settings_button_delete"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="7.30"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:id="@+id/alarm_settings_time"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:paddingTop="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#ffe53935" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe53935" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:weightSum="70"
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <CheckBox
+            android:text="@string/mondayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_monday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+        <CheckBox
+            android:text="@string/tuesdayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_tuesday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+        <CheckBox
+            android:text="@string/wednesdayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_wednesday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+        <CheckBox
+            android:text="@string/thursdayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_thursday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+        <CheckBox
+            android:text="@string/fridayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_friday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp"
+            android:checked="true" />
+        <CheckBox
+            android:text="@string/saturdayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_saturday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+        <CheckBox
+            android:text="@string/sundayAbr"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:button="@drawable/daypicker_checkbox"
+            android:id="@+id/daypicker_sunday"
+            android:textColor="#ffe53935"
+            android:textStyle="bold"
+            android:paddingLeft="3dp" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe53935" />
+    <TextView
+        android:text="Chopin"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/alarm_settings_action"
+        android:textColor="#ffe53935"
+        android:paddingBottom="3dp"
+        android:paddingTop="3dp" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="100"
+        android:id="@+id/linearLayout2"
+        android:padding="10dp">
+        <TextView
+            android:text="@string/volume"
+            android:layout_width="0dp"
+            android:layout_weight="30"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_settings_volume_label"
+            android:layout_gravity="center"
+            android:textColor="#ffe53935" />
+        <SeekBar
+            android:layout_width="0dp"
+            android:layout_weight="70"
+            android:layout_height="wrap_content"
+            android:id="@+id/alarm_settings_volume_slider"
+            android:max="50"
+            android:background="#ffeeeeee"
+            android:fitsSystemWindows="true" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe53935" />
+    <TextView
+        android:text="@string/snoozeTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/alarm_settings_snooze_time"
+        android:textColor="#ffe53935"
+        android:padding="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe53935" />
+    <TextView
+        android:text="@string/duration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:id="@+id/alarm_settings_duration"
+        android:textColor="#ffe53935"
+        android:padding="10dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#ffe53935" />
+    <Button
+        android:text="@string/save"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:id="@+id/alarm_settings_button_save" />
+</LinearLayout>

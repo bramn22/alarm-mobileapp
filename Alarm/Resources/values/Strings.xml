@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="add_alarm">Add alarm</string>
+	<string name="app_name">Alarm</string>
+	<string name="cancel">Cancel</string>
+	<string name="save">Save</string>
+	<string name="volume">Volume:</string>
+	<string name="snoozeTime">Snooze time: </string>
+	<string name="duration">Duration: </string>
+	<string name="turnOff">Turn off</string>
+	<string name="snooze">Snooze</string>
+	<string name="mondayAbr">M</string>
+	<string name="tuesdayAbr">T</string>
+	<string name="wednesdayAbr">W</string>
+	<string name="thursdayAbr">T</string>
+	<string name="fridayAbr">F</string>
+	<string name="saturdayAbr">S</string>
+	<string name="sundayAbr">S</string>
+
+</resources>

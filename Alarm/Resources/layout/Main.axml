@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light">
+    <Button
+        android:id="@+id/add_alarm_button"
+        android:layout_width="match_parent"
+        android:layout_height="59.5dp"
+        android:text="@string/add_alarm"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp" />
+    <ListView
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="fill_parent"
+        android:divider="#ffe53935"
+        android:dividerHeight="1dp"
+        android:layout_height="fill_parent"
+        android:id="@+id/alarm_listview" />
+</LinearLayout>
